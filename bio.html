@@ -1,17 +1,126 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography | Mengyiyi Chen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Cormorant+Garamond:ital,wght@0,300;1,400;1,300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(rgba(22, 32, 45, 0.95), rgba(12, 18, 26, 0.98));
+            background-color: #0c121a; 
+            color: #b8c4ce; 
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        nav { margin-top: 45px; margin-bottom: 60px; }
+        nav a { color: #8491a1; text-decoration: none; margin: 0 25px; font-size: 0.85rem; letter-spacing: 4px; transition: 0.4s; text-transform: uppercase; }
+        nav a:hover { color: #d1b48c; }
+
+        .container {
+            display: flex;
+            max-width: 1100px;
+            width: 90%;
+            gap: 60px;
+            align-items: flex-start;
+            margin-bottom: 100px;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        /* 肖像照容器 */
+        .photo-side {
+            flex: 1;
+            position: sticky;
+            top: 50px;
+        }
+
+        .photo-side img {
+            width: 100%;
+            filter: grayscale(20%) contrast(1.1);
+            border: 1px solid rgba(209, 180, 140, 0.2);
+            box-shadow: 20px 20px 0px -5px rgba(209, 180, 140, 0.05); /* 装饰性金色背影 */
+        }
+
+        /* 文字内容 */
+        .bio-text {
+            flex: 1.5;
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        .bio-text h2 {
+            font-family: 'Playball', cursive;
+            font-size: 3rem;
+            color: #d1b48c;
+            margin-top: 0;
+            font-weight: normal;
+        }
+
+        .bio-text p { margin-bottom: 25px; color: #aeb9c4; }
+
+        .highlight { color: #d1b48c; font-style: italic; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px;
+            color: #5a6675;
+            font-size: 0.65rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 850px) {
+            .container { flex-direction: column; align-items: center; }
+            .photo-side { position: static; width: 80%; margin-bottom: 40px; }
+            .bio-text { text-align: left; }
+        }
+    </style>
 </head>
 <body>
-<p class="p1"><span class="s1">bio.html</span></p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="photo-side">
+            <img src="bio-photo.jpg" alt="Mengyiyi Chen">
+        </div>
+
+        <div class="bio-text">
+            <h2>Biography</h2>
+            <p>
+                <span class="highlight">Dr. Mengyiyi Chen</span> earned her Doctor of Musical Arts degree in Piano Performance from the <span class="highlight">University of North Texas</span>, where she studied with Joseph Banowetz and Steven Harlos and minored in Collaborative Piano under Elvia Puccinelli. She holds a Master of Music degree from the <span class="highlight">Manhattan School of Music</span> and an Honorary Bachelor’s Degree from the Wuhan Conservatoire of Music.
+            </p>
+            <p>
+                Her debut album, <span class="highlight">Mel Bonis: Piano Solo Volume 1</span>, released by London Toccata Classics in 2023, has garnered international acclaim for its artistic depth. Featured on <span class="highlight">BBC Radio 3</span>, the recording has been praised for its elegant phrasing and colorful tonal nuance, establishing Dr. Chen as a thoughtful interpreter of French piano repertoire.
+            </p>
+            <p>
+                A winner of multiple international competitions—including the Helen Taylor Johannsen (U.S.) and Castelnuovo di Garfagnana (Italy)—her performances as both a soloist and collaborative artist are recognized for their clarity and technical mastery.
+            </p>
+            <p>
+                Beyond the stage, Dr. Chen is a dedicated educator serving on the boards of <span class="highlight">MTNA (Seattle Chapter)</span> and the Eastside Music Teachers Association. Her students have consistently won top honors in competitions such as the Chopin Northwest and Pacific Northwest Piano Competitions.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 MENGYIYI CHEN. ALL RIGHTS RESERVED.
+    </footer>
 </body>
 </html>
