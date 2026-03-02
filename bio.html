@@ -7,10 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playball&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <style>
         body {
-            /* 保持深墨蓝背景：水属性 */
             background: linear-gradient(rgba(22, 32, 45, 0.98), rgba(12, 18, 26, 1));
             background-color: #0c121a; 
-            color: #b0bac5; /* 正文文字：低调的烟灰色 */
+            color: #b0bac5; 
             font-family: 'Cormorant Garamond', serif;
             margin: 0;
             display: flex;
@@ -33,56 +32,16 @@
             animation: fadeIn 2s ease forwards;
         }
 
-        .photo-side {
-            flex: 1;
-            position: sticky;
-            top: 50px;
-        }
+        .photo-side { flex: 1; position: sticky; top: 50px; }
+        .photo-side img { width: 100%; filter: contrast(1.05) brightness(0.95); border: 1px solid rgba(209, 180, 140, 0.1); }
 
-        .photo-side img {
-            width: 100%;
-            /* 恢复照片原色，仅增加一点高级的质感滤镜 */
-            filter: contrast(1.05) brightness(0.95);
-            border: 1px solid rgba(209, 180, 140, 0.1);
-            transition: 0.8s ease;
-        }
+        .bio-text { flex: 1.5; text-align: justify; line-height: 2; font-size: 1.05rem; }
+        .bio-text h2 { font-family: 'Playball', cursive; font-size: 2.8rem; color: #d1b48c; margin-top: 0; margin-bottom: 35px; font-weight: normal; }
+        .bio-text p { margin-bottom: 25px; }
 
-        .bio-text {
-            flex: 1.5;
-            text-align: justify;
-            line-height: 2; 
-            font-size: 1.05rem;
-        }
+        footer { margin-top: auto; padding: 40px; color: #4a5461; font-size: 0.6rem; letter-spacing: 3px; text-transform: uppercase; }
 
-        /* 重点：将你的名字（标题）恢复为琥珀金 */
-        .bio-text h2 {
-            font-family: 'Playball', cursive;
-            font-size: 2.8rem;
-            color: #d1b48c; /* 琥珀金：金属性，点睛之笔 */
-            margin-top: 0;
-            margin-bottom: 35px;
-            font-weight: normal;
-            letter-spacing: 1px;
-        }
-
-        .bio-text p { 
-            margin-bottom: 25px; 
-            color: #b0bac5; /* 段落文字保持素雅低调 */
-        }
-
-        footer {
-            margin-top: auto;
-            padding: 40px;
-            color: #4a5461;
-            font-size: 0.6rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 
         @media (max-width: 850px) {
             .container { flex-direction: column; align-items: center; }
@@ -107,13 +66,19 @@
         <div class="bio-text">
             <h2>Biography</h2>
             <p>
-                Dr. Mengyiyi Chen earned her Doctor of Musical Arts degree in Piano Performance from the University of North Texas, where she studied with Joseph Banowetz and Steven Harlos and minored in Collaborative Piano under Elvia Puccinelli. She holds a Master of Music degree from the Manhattan School of Music, studying piano with Phillip Kawin and chamber music with Nicholas Mann, and an Honorary Bachelor’s Degree in Music from the Wuhan Conservatoire of Music in China.
+                Based in Bellevue, Washington, Dr. Mengyiyi Chen is a passionate pianist active as a solo pianist and collaborative pianist. Her international career has led her to stages including the Walt Disney Concert Hall in California, Teatro Alfieri in Italy, and the Qintai Grand Theatre in Wuhan, as well as Seattle’s Good Shepherd Center and the Cornish College of the Arts at Seattle University. Her performances have been recognized for their expressiveness, clarity, and focus.
             </p>
             <p>
                 Her debut album, <i>Mel Bonis: Piano Solo Volume 1</i>, released by the London Toccata label in 2023, has garnered international acclaim for its artistic depth and refined sensitivity. The recording has been featured on BBC Radio 3 and praised by leading music publications for its elegant phrasing and colorful tonal nuance, establishing Chen as a thoughtful interpreter of French piano repertoire.
             </p>
             <p>
-                A winner of international competitions—including the Helen Taylor Johannsen International Piano Competition (U.S.), the Castelnuovo di Garfagnana Piano Competition (Italy), and the University of North Texas Concerto Competition, as well as a full scholarship to the Seattle International Piano Festival. Her performances as both a soloist and collaborative artist have been recognized for their expressiveness, clarity, and technical mastery.
+                Dr. Chen earned her Doctor of Musical Arts degree in Piano Performance from the University of North Texas, where she studied with Joseph Banowetz and Steven Harlos and minored in Collaborative Piano under Elvia Puccinelli. She holds a Master of Music degree from the Manhattan School of Music, studying piano with Phillip Kawin and chamber music with Nicholas Mann, and an Honorary Bachelor’s Degree in Music from the Wuhan Conservatoire of Music in China, where she studied with Liping Jiang.
+            </p>
+            <p>
+                She had good experience with Yundi Li, Kim Dae-jin, Craig Sheppard, Angela Cheng, Alvin Chow, Lu Ning, Caroline Hong, Inna Faliks, Robin McCabe, Inesa Sinkevych, Ha Yang Kim, and Linda Veleckis Nussbaum.
+            </p>
+            <p>
+                Dr. Chen is also a deeply passionate collaborative artist. During her undergraduate studies, she was selected to serve as a piano assistant for the Composition and Conducting Department’s orchestral classes and was chosen by the Orchestral Instruments Department to be part of an elite piano trio. A winner of international competitions, her accolades include the Helen Taylor Johannsen International Piano Competition (U.S.), the Castelnuovo di Garfagnana Piano Competition (Italy), and the University of North Texas Concerto Competition.
             </p>
             <p>
                 Beyond her performing career, Dr. Chen is a dedicated educator. She serves on the boards of the Music Teachers National Association (MTNA) – Seattle Chapter and the Eastside chapter, actively supporting community programs and student development. Her students have won top honors in competitions such as the Pacific Northwest Piano Competition, Chopin Northwest Competition, Golden Classical Music Awards International Competition, and the International French Music Competition.
@@ -122,7 +87,7 @@
     </div>
 
     <footer>
-        &copy; 2024 MENGYIYI CHEN. ALL RIGHTS RESERVED.
+        &copy; 2026 MENGYIYI CHEN. ALL RIGHTS RESERVED.
     </footer>
 </body>
 </html>
